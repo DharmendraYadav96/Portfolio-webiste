@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Generative AI - Introduction",
+        "image": "../images/genai.png",
+        "description": "This is a brief description of Generative AI",
+        "slug": "/blogs/Genai"
+},
+    {
+        "title":"AI vs ML",
+        "image": "../images/genaivsml.png",
+        "description": "Difference between GEN AI vs ML",
+        "slug": "/blogs/genaivsml"
+    }
+
+]
