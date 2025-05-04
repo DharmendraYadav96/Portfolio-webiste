@@ -1,12 +1,13 @@
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, request, jsonify
 import json
 import os
+# from chatbot.chatbot import GenAIChatbot
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("base.html")  # Or a proper home.html later
+    return render_template("base.html", active_page = 'home')  # Or a proper home.html later
 
 @app.route("/blogs")
 def blogs():
@@ -18,6 +19,10 @@ def blogs():
 def contacts():
     return render_template("contact.html", active_page = 'contacts')
 
+@app.route('/chat')
+def chat_page():
+    return render_template('chat.html', active_page = 'Chatbot')
+
 @app.route("/blogs/<slug>")
 def blog_post(slug):
     template_path = f"blogs/{slug}.html"
@@ -26,6 +31,14 @@ def blog_post(slug):
         return render_template(template_path)
     else:
         abort(404)
+
+
+
+# @app.route('/ask', methods=['POST'])
+# def ask():
+#     user_message = request.json.get('message')
+#     bot_response = chatbot.get_response(user_message)
+#     return jsonify({'response': bot_response})
 
 if __name__ == "__main__":
     app.run(debug=True)
