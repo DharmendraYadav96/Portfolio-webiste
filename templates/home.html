@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <h2>About Me</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8">
+            <h3>Dharmendra Yadav</h3>
+            <p>Passionate Data Scientist with hands-on experience in data analysis, machine learning, and AI-powered application development.</p>
+            
+            <h4>Skills</h4>
+            <ul>
+                <li>Python, Flask, Streamlit, SQL, Pandas, NumPy</li>
+                <li>Machine Learning: Scikit-learn, TensorFlow, PyTorch</li>
+                <li>Generative AI: OpenAI, LangChain</li>
+                <li>Web Development: HTML, CSS, Bootstrap</li>
+                <li>Data Visualization: Matplotlib, Seaborn</li>
+            </ul>
+
+            <h4>Personal Projects</h4>
+            <ul>
+                <li><strong>Hotel Booking Analysis:</strong> Conducted EDA on a hotel booking dataset to uncover patterns, optimize revenue, and improve customer experience .</li>
+                <li><strong>Bike Sharing Demand Prediction:</strong> Built a regression model to predict optimal bike demand, ensuring a stable supply of rental bikes .</li>
+                <li><strong>Credit Card Default Prediction:</strong> Developed a classification model to identify customers at risk of defaulting on credit card payments .</li>
+                <li><strong>Netflix Movies and TV Shows Clustering:</strong> Optimized content recommendations through clustering, enhancing user personalization .</li>
+            </ul>
+
+            <h4>Work Experience</h4>
+            <ul>
+                <li><strong>Data Analyst – Hitech Digital, Ahmedabad (02/2022 - Present)</strong><br>
+                    Analyzed large volumes of aeronautical data using SQL and Python (NumPy, Pandas, Matplotlib, Seaborn) to generate actionable insights for aeronavigation. Built dashboards in Tableau to track errors and recommend process improvements .
+                </li>
+                <li><strong>Aeronautical Analyst – Hitech Digital, Ahmedabad (11/2018 - 01/2022)</strong><br>
+                    Analyzed aeronautical data from AIP, Supplements, and NOTAMs to prepare charts for flight planning, navigation, and air traffic management .
+                </li>
+            </ul>
+
+            <h4>Education</h4>
+            <ul>
+                <li><strong>B. Tech (Aeronautical Engineering)</strong> – Rajasthan Technical University (08/2014 - 06/2018) </li>
+            </ul>
+
+            <h4>Contact Me</h4>
+            <p>Email: dharmydv96@gmail.com</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/dharmendrayadav1996" target="_blank">Dharmendra Yadav</a></p>
+            <p>GitHub: <a href="https://github.com/DharmendraYadav96" target="_blank">DharmendraYadav96</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

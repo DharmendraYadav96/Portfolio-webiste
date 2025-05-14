@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("base.html", active_page = 'home')  # Or a proper home.html later
+    return render_template("home.html", active_page = 'home')  # Or a proper home.html later
 
 @app.route("/blogs")
 def blogs():
