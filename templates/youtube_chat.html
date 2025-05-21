@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-4">
+  <h2>Summarise youtube video</h2>
+ 
+    <form method="POST">
+        <div class="input-group mb-3">
+            <input type="text" name="url" class="form-control" placeholder="Enter YouTube URL" required>
+            <button type="submit" class="btn btn-primary">Summarize</button>
+        </div>
+    </form>
+    <div id="chat-box" class="border p-3 mb-3" style="height: 300px; overflow-y: auto;"></div>
+</div>
+    <!-- YouTube URL Submission -->
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}

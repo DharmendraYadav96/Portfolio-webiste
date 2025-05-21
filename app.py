@@ -23,6 +23,11 @@ def contacts():
 def chat_page():
     return render_template('chat.html', active_page = 'Chatbot')
 
+
+@app.route('/youtube_chat')
+def youtube_chat_page():
+    return render_template('youtube_chat.html', active_page = 'Chatbot')
+
 @app.route("/blogs/<slug>")
 def blog_post(slug):
     template_path = f"blogs/{slug}.html"
