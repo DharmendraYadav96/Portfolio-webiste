@@ -1,6 +1,8 @@
 from flask import Flask, render_template, abort, request, jsonify
 import json
 import os
+from youtube_chatbot.routes import youtube_bp
+
 # from chatbot.chatbot import GenAIChatbot
 
 app = Flask(__name__)
@@ -24,9 +26,11 @@ def chat_page():
     return render_template('chat.html', active_page = 'Chatbot')
 
 
-@app.route('/youtube_chat')
-def youtube_chat_page():
-    return render_template('youtube_chat.html', active_page = 'Chatbot')
+# @app.route('/youtube_chat')
+# def youtube_chat_page():
+#     return render_template('youtube_chat.html', active_page = 'youtube_chatbot')
+
+app.register_blueprint(youtube_bp)
 
 @app.route("/blogs/<slug>")
 def blog_post(slug):

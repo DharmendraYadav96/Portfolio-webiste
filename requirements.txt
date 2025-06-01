@@ -1,2 +1,22 @@
 Flask==2.3.3
 gunicorn
+
+# LangChain Core
+langchain
+langchain-core
+
+# OpenAI Integration
+langchain-openai
+openai
+
+# langchain community
+langchain-community
+
+# Environment Variable Management
+python-dotenv
+
+# youtube transcript extraction
+youtube-transcript-api
+
+# vector store
+faiss-cpu
