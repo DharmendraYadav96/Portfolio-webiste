@@ -1,0 +1,47 @@
+# === Python Bytecode ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# === Virtual Environments ===
+myenv/
+
+# === Flask + Secrets ===
+*.env
+.env.*
+instance/
+*.cfg
+*.pem
+
+# === Editor & System Files ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === Logs and Database Files ===
+*.log
+*.sqlite3
+*.db
+*.bak
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/
+
+# === Packaging ===
+*.egg
+*.egg-info/
+dist/
+build/
+*.tar.gz
+
+# === Pytest + Coverage ===
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# === Misc ===
+*.swp
+.cache/
