@@ -20,10 +20,6 @@ This is my personal portfolio website built with **Flask**, showcasing my skills
 
 ## 📁 Project Structure
 
-
-
-To run the file on local system, activate environment. Ten run code:
-Run python app.py 
 ````
 /portfolio-website
 ├── app.py # Main Flask app
@@ -61,14 +57,29 @@ source myenv/bin/activate  # On Windows: myenv\Scripts\activate
 pip install -r requirements.txt
 ````
 #### Set your OpenAI API key
+Create .env file to store the API Key
 ````
 OPENAI_API_KEY=your-openai-key
 ````
 #### Run the app
 ````
-flask run
+python app.py 
 ````
-
+## 🌐 Deployment (Render)
+This app can be deployed using Render.
+````
+services:
+  - type: web
+    name: flask-portfolio
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+````
+Set API Key on Hosting Platform:
+- Go to your deployed service's dashboard
+- Find Environment Variables or Secrets
+- upload .env folder  containing OPEN_API_KEY
+  
 ## 🧠 Tech Stack
 - Backend: Python, Flask
 - Frontend: HTML, CSS, Bootstrap, Jinja2
