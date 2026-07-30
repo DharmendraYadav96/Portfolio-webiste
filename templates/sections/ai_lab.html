@@ -1,0 +1,49 @@
+<section id="ai-lab" class="ai-lab-section">
+
+    <div class="section-header">
+
+        <div>
+
+            <span class="section-tag">
+                AI LAB
+            </span>
+
+            <h2 class="section-title">
+                Live AI Applications
+            </h2>
+
+            <p class="section-subtitle">
+                Every project below is fully functional and can be used directly.
+            </p>
+
+        </div>
+
+        <a href="https://github.com/DharmendraYadav96"
+           target="_blank"
+           class="view-all-btn">
+
+            View All Projects
+
+            <i class="bi bi-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+
+
+    <div class="row g-4">
+
+        {% for project in projects %}
+
+            <div class="col-lg-4 col-md-6">
+
+                {% include 'components/project_card.html' %}
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>

@@ -1,0 +1,107 @@
+<section id="experience" class="experience-section">
+
+    <div class="container-fluid">
+
+        <!-- Section Heading -->
+
+        <div class="section-header">
+
+            <div>
+
+                <span class="section-tag">
+                    EXPERIENCE
+                </span>
+
+                <h2 class="section-title">
+                    Professional Journey
+                </h2>
+
+                <p class="section-subtitle">
+                    My transition from aviation and data analytics to building production-ready AI applications.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Experience Cards -->
+
+        <div class="experience-timeline">
+
+            <div class="timeline-line"></div>
+
+            <div class="experience-wrapper">
+
+                {% for job in experience %}
+                
+                <div class="timeline-dot"></div>
+
+                <div class="experience-card">
+
+                    <div class="experience-icon">
+
+                        <i class="{{ job.icon }}"></i>
+
+                    </div>
+
+                    <div class="experience-content">
+
+                        <div class="experience-header">
+
+                            <div>
+
+                                <h3 class="experience-role">
+
+                                    {{ job.role }}
+
+                                </h3>
+
+                                <h5 class="experience-company">
+
+                                    {{ job.company }}
+
+                                </h5>
+
+                            </div>
+
+                            <span class="experience-duration">
+
+                                {{ job.duration }}
+
+                            </span>
+
+                        </div>
+
+                        <p class="experience-description">
+
+                            {{ job.description }}
+
+                        </p>
+
+                        <div class="experience-skills">
+
+                            {% for skill in job.skills %}
+
+                            <span>
+
+                                {{ skill }}
+
+                            </span>
+
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

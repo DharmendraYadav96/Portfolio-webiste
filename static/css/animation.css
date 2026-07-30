@@ -1,0 +1,22 @@
+.project-card,
+.skill-card,
+.btn-ai,
+.profile-image{
+
+    transition:.35s ease;
+
+}
+
+.btn-ai:hover{
+
+    transform:translateY(-4px);
+a
+}
+
+.tech-stack span:hover{
+
+    background:var(--primary);
+
+    cursor:pointer;
+
+}

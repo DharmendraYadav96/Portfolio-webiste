@@ -1,0 +1,109 @@
+<section id="blogs" class="blogs-section">
+
+    <div class="container-fluid">
+
+        <div class="section-header">
+
+            <div>
+
+                <span class="section-tag">
+
+                    BLOGS
+
+                </span>
+
+                <h2 class="section-title">
+
+                    Latest Articles
+
+                </h2>
+
+                <p class="section-subtitle">
+
+                    Sharing what I learn while building AI applications.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="row g-4">
+
+            {% for blog in blogs %}
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="blog-card">
+
+                    <span class="blog-category">
+
+                        {{ blog.category }}
+
+                    </span>
+
+                    <h3>
+
+                        {{ blog.title }}
+
+                    </h3>
+
+                    <p>
+
+                        {{ blog.description }}
+
+                    </p>
+
+                    <div class="blog-footer">
+
+                        <div class="blog-meta">
+
+                            <span>
+
+                                <i class="bi bi-calendar3"></i>
+
+                                {{ blog.date }}
+
+                            </span>
+
+                            <span>
+
+                                <i class="bi bi-clock"></i>
+
+                                {{ blog.read_time }}
+
+                            </span>
+
+                        </div>
+
+                        <a href="#">
+
+                            Read Article
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="text-center mt-5">
+
+            <a href="/blogs" class="btn btn-ai">
+
+                View All Articles
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>

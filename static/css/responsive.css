@@ -1,0 +1,207 @@
+/* ===============================
+        TABLET
+================================ */
+
+@media (max-width:992px){
+
+    h1{
+
+        font-size:48px;
+
+    }
+
+    h2{
+
+        font-size:36px;
+
+    }
+
+    section{
+
+        padding:80px 0;
+
+    }
+
+}
+
+
+/* ===============================
+        MOBILE
+================================ */
+
+@media (max-width:768px){
+
+    h1{
+
+        font-size:36px;
+
+    }
+
+    h2{
+
+        font-size:30px;
+
+    }
+
+    p{
+
+        font-size:16px;
+
+    }
+
+.btn-ai{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:100%;
+
+    padding:14px 20px;
+
+    background:linear-gradient(135deg,#7C5CFC,#5B21B6);
+
+    color:#FFFFFF !important;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    font-size:16px;
+
+    text-decoration:none !important;
+
+    box-shadow:0 8px 20px rgba(124,92,252,.35);
+
+    transition:all .3s ease;
+
+}
+
+
+.btn-ai:hover{
+
+    background:linear-gradient(135deg,#8B6CFF,#6D4EFF);
+
+    color:#FFFFFF !important;
+
+    transform:translateY(-2px);
+
+}
+
+    .btn-outline-ai{
+
+    border:1px solid rgba(255,255,255,.15);
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.btn-outline-ai:hover{
+
+    background:#7C5CFC;
+
+    color:white;
+
+}
+
+}
+
+@media(max-width:768px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .placeholder-card{
+
+        min-height:220px;
+
+        font-size:18px;
+
+    }
+
+    #scrollTop{
+
+        right:15px;
+
+        bottom:15px;
+
+    }
+
+}
+
+/* ==================================================
+            DASHBOARD RESPONSIVE
+================================================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+
+        display:none;
+
+    }
+
+    .main-content{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+    .hero-section{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:50px;
+
+    }
+
+    .hero-content{
+
+        max-width:100%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:48px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .hero-card{
+
+        width:100%;
+
+        max-width:420px;
+
+    }
+
+}

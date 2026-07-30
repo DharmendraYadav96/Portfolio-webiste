@@ -1,0 +1,89 @@
+/* ======================================================
+                    STATS SECTION
+====================================================== */
+
+.stats-section{
+
+    padding:100px 0;
+
+}
+
+.stats-card{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    height:100%;
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(124,92,252,.35);
+
+    box-shadow:0 20px 40px rgba(124,92,252,.15);
+
+}
+
+.stats-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#7C5CFC,#3B82F6);
+
+}
+
+.stats-icon i{
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+.stats-card h2{
+
+    color:white;
+
+    font-size:46px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+.stats-card p{
+
+    color:#94A3B8;
+
+    margin:0;
+
+    font-size:17px;
+
+}

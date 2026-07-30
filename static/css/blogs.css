@@ -1,0 +1,280 @@
+/* ==========================================================
+                    BLOGS SECTION
+========================================================== */
+
+.blogs-section{
+
+    padding:100px 0;
+
+}
+
+
+/* ==========================================================
+                    BLOG CARD
+========================================================== */
+
+.blog-card{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    height:100%;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.blog-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(124,92,252,.35);
+
+    box-shadow:0 20px 45px rgba(124,92,252,.18);
+
+}
+
+.blog-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(124,92,252,.08),
+        transparent
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.blog-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* ==========================================================
+                    CATEGORY
+========================================================== */
+
+.blog-category{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    background:rgba(124,92,252,.15);
+
+    color:#A78BFA;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* ==========================================================
+                    TITLE
+========================================================== */
+
+.blog-card h3{
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    line-height:1.4;
+
+    margin-bottom:18px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* ==========================================================
+                    DESCRIPTION
+========================================================== */
+
+.blog-card p{
+
+    color:#94A3B8;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+    position:relative;
+
+    z-index:2;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:3;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+
+
+/* ==========================================================
+                    FOOTER
+========================================================== */
+
+.blog-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:30px;
+
+    padding-top:20px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:auto;
+
+}
+
+.blog-meta{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.blog-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#94A3B8;
+
+    font-size:14px;
+
+}
+
+.blog-meta i{
+
+    color:#7C5CFC;
+
+}
+
+.blog-footer span{
+
+    color:#64748B;
+
+    font-size:14px;
+
+}
+
+.blog-footer a{
+
+    color:#7C5CFC;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    transition:.3s;
+
+}
+
+.blog-footer a:hover{
+
+    color:#A78BFA;
+
+    transform:translateX(5px);
+
+}
+
+.blog-footer i{
+
+    margin-left:6px;
+
+}
+
+
+/* ==========================================================
+                    VIEW ALL BUTTON
+========================================================== */
+
+.blogs-section .btn-ai{
+
+    margin-top:20px;
+
+}
+
+
+/* ==========================================================
+                    RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .blog-card{
+
+        padding:24px;
+
+    }
+
+    .blog-card h3{
+
+        font-size:20px;
+
+    }
+
+}

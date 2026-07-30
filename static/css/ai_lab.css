@@ -1,0 +1,81 @@
+.ai-lab{
+
+    background:#101624;
+
+}
+
+.project-card{
+
+    background:var(--card);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    border:1px solid var(--border);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(124,92,252,.15);
+
+}
+
+.project-icon{
+
+    font-size:42px;
+
+}
+
+.project-title{
+
+    font-size:28px;
+
+    margin:20px 0;
+
+}
+
+.project-description{
+
+    color:var(--muted);
+
+    line-height:1.8;
+
+}
+
+.project-tech{
+
+    margin-top:25px;
+
+}
+
+.project-tech span{
+
+    display:inline-block;
+
+    margin:5px;
+
+    padding:8px 15px;
+
+    background:#21293D;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}
+
+.project-buttons{
+
+    margin-top:30px;
+
+}

@@ -1,0 +1,59 @@
+<div class="project-card">
+
+    <!-- Top -->
+    <div class="project-top">
+
+        <div class="project-icon">
+            <i class="{{ project.icon }}"></i>
+        </div>
+
+        <span class="live-badge">
+            {{ project.status }}
+        </span>
+
+    </div>
+
+    <!-- Title -->
+    <h3 class="project-title">
+        {{ project.title }}
+    </h3>
+
+    <!-- Description -->
+    <p class="project-description">
+        {{ project.description }}
+    </p>
+
+    <!-- Tech Stack -->
+    <div class="project-tech">
+
+        {% for tag in project.tags %}
+
+            <span>{{ tag }}</span>
+
+        {% endfor %}
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="project-buttons">
+
+        <a href="{{ project.live }}"
+           target="_blank"
+           class="btn-project">
+
+            Live Demo
+            <i class="bi bi-arrow-right"></i>
+
+        </a>
+
+        <a href="{{ project.github }}"
+           target="_blank"
+           class="btn-github">
+
+            <i class="bi bi-github"></i>
+
+        </a>
+
+    </div>
+
+</div>

@@ -1,0 +1,180 @@
+/* ==========================================================
+                    SKILLS SECTION
+========================================================== */
+
+.skills-section{
+
+    padding:100px 0;
+
+}
+
+.skill-card{
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    height:100%;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(124,92,252,.35);
+
+    box-shadow:0 20px 45px rgba(124,92,252,.18);
+
+}
+
+.skill-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(124,92,252,.08),
+        transparent
+    );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.skill-card:hover::before{
+
+    opacity:1;
+
+}
+
+/* ---------- Header -------- */
+
+.skill-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:30px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.skill-icon{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        #7C5CFC,
+        #3B82F6
+    );
+
+    color:white;
+
+    font-size:26px;
+
+}
+
+.skill-header h3{
+
+    color:white;
+
+    font-size:24px;
+
+    margin:0;
+
+}
+
+/* ---------- Skill Chips --------- */
+
+.skill-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.skill-list span{
+
+    padding:10px 18px;
+
+    background:#1E293B;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    color:#CBD5E1;
+
+    font-size:14px;
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+.skill-list span:hover{
+
+    background:#7C5CFC;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
+
+/* -------- Responsive ------- */
+
+@media(max-width:768px){
+
+    .skill-card{
+
+        padding:25px;
+
+    }
+
+}
+
+
+
