@@ -23,37 +23,56 @@
         {{ project.description }}
     </p>
 
+    <!-- Highlight -->
+    <div class="project-featured">
+
+        <i class="bi bi-stars"></i>
+
+        {{ project.featured }}
+
+    </div>
+
     <!-- Tech Stack -->
     <div class="project-tech">
 
         {% for tag in project.tags %}
 
-            <span>{{ tag }}</span>
+        <span>{{ tag }}</span>
 
         {% endfor %}
 
     </div>
 
     <!-- Buttons -->
-    <div class="project-buttons">
+<div class="project-buttons">
 
-        <a href="{{ project.live }}"
-           target="_blank"
-           class="btn-project">
+    <a href="{{ project.live }}"
+       target="_blank"
+       class="btn-project">
 
-            Live Demo
-            <i class="bi bi-arrow-right"></i>
+        Live Demo
 
-        </a>
+        <i class="bi bi-arrow-right"></i>
 
-        <a href="{{ project.github }}"
-           target="_blank"
-           class="btn-github">
+    </a>
 
-            <i class="bi bi-github"></i>
+    <a href="{{ project.github }}"
+       target="_blank"
+       class="btn-github">
 
-        </a>
+        <i class="bi bi-github"></i>
 
-    </div>
+    </a>
+
+</div>
+
+<a href="/projects/{{ project.slug }}"
+   class="project-details">
+
+    View Details
+
+    <i class="bi bi-arrow-right"></i>
+
+</a>
 
 </div>

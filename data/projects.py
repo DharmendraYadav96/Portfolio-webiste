@@ -1,64 +1,85 @@
 projects = [
 
     {
-        "title":"Agentic Content Studio",
+        "title": "Agentic Content Studio",
 
-        "icon":"bi bi-rocket-takeoff-fill",
+        "slug": "agentic-content-studio",
 
-        "description":"Generate complete blogs using LangGraph multi-agent workflow with research, writing and SEO optimization.",
+        "icon": "bi bi-rocket-takeoff-fill",
 
-        "tags":[
+        "image": "projects/agentic-content-studio.png",
+
+        "description": "Generate complete blogs using LangGraph multi-agent workflow with research, writing and SEO optimization.",
+
+        "tags": [
             "LangGraph",
             "OpenAI",
             "RAG",
             "Flask"
         ],
 
-        "live":"#",
+        "featured": "Multi-Agent Workflow",
 
-        "github":"https://github.com/DharmendraYadav96",
+        "live": "#",
 
-        "status":"Live"
+        "github": "https://github.com/DharmendraYadav96",
+
+        "status": "Live"
+
     },
 
     {
-        "title":"YouTube AI Chatbot",
+        "title": "YouTube AI Chatbot",
 
-        "icon":"bi bi-youtube",
+        "slug": "youtube-ai-chatbot",
 
-        "description":"Chat with any YouTube video using RetrievalQA and vector embeddings.",
+        "icon": "bi bi-youtube",
 
-        "tags":[
+        "image": "projects/youtube-chatbot.png",
+
+        "description": "Chat with any YouTube video using RetrievalQA and vector embeddings.",
+
+        "tags": [
             "LangChain",
             "FAISS",
             "OpenAI"
         ],
 
-        "live":"#",
+        "featured": "RAG Chatbot",
 
-        "github":"https://github.com/DharmendraYadav96",
+        "live": "#",
 
-        "status":"Live"
+        "github": "https://github.com/DharmendraYadav96",
+
+        "status": "Live"
+
     },
 
     {
-        "title":"Resume Analyzer",
+        "title": "Resume Analyzer",
 
-        "icon":"bi bi-file-earmark-person",
+        "slug": "resume-analyzer",
 
-        "description":"Upload resume and compare it with job description using NLP.",
+        "icon": "bi bi-file-earmark-person",
 
-        "tags":[
+        "image": "projects/resume-analyzer.png",
+
+        "description": "Upload resume and compare it with job description using NLP.",
+
+        "tags": [
             "NLP",
             "Scikit-Learn",
             "Flask"
         ],
 
-        "live":"#",
+        "featured": "NLP Matching",
 
-        "github":"https://github.com/DharmendraYadav96",
+        "live": "#",
 
-        "status":"Coming Soon"
+        "github": "https://github.com/DharmendraYadav96",
+
+        "status": "Coming Soon"
+
     }
 
 ]

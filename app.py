@@ -22,6 +22,26 @@ def home():
         blogs=blog_data,
         active_page="home"
     )
+# ---------------------------------
+# AI Lab
+# ---------------------------------
+
+@app.route("/projects/<slug>")
+def project_detail(slug):
+
+    project = next(
+        (p for p in projects if p["slug"] == slug),
+        None
+    )
+
+    if project is None:
+        abort(404)
+
+    return render_template(
+        "pages/project_detail.html",
+        project=project,
+        active_page="projects"
+    )
 
 
 # ---------------------------------
