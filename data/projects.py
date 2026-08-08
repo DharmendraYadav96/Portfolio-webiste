@@ -20,9 +20,9 @@ projects = [
 
         "featured": "Multi-Agent Workflow",
 
-        "live": "#",
+        "live": "https://agentic-content-studio-app.onrender.com/",
 
-        "github": "https://github.com/DharmendraYadav96",
+        "github": "https://github.com/DharmendraYadav96/agentic-content-studio-app.git",
 
         "status": "Live"
 

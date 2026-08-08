@@ -136,6 +136,8 @@
 
     transition:.35s;
 
+    pointer-events: none;
+
 }
 
 .project-card:hover{
@@ -307,6 +309,10 @@
 
     align-items:center;
 
+    position: relative;
+    
+    z-index: 5;
+
 }
 
 .btn-project{
@@ -402,6 +408,9 @@
 .project-details i{
 
     transition:.3s;
+
+    position: relative;
+    z-index: 5;
 
 }
 
