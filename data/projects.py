@@ -12,10 +12,13 @@ projects = [
         "description": "Generate complete blogs using LangGraph multi-agent workflow with research, writing and SEO optimization.",
 
         "tags": [
+            "MultiAgent",
             "LangGraph",
+            "Langchain",
             "OpenAI",
-            "RAG",
-            "Flask"
+            "Gemini",
+            "Flask",
+            "Render"
         ],
 
         "featured": "Multi-Agent Workflow",
@@ -56,23 +59,27 @@ projects = [
     },
 
     {
-        "title": "Resume Analyzer",
+        "title": "Enterprise AI knowledge Platform",
 
-        "slug": "resume-analyzer",
+        "slug": "enterprise-ai-knowledge-platform",
 
         "icon": "bi bi-file-earmark-person",
 
-        "image": "projects/resume-analyzer.png",
+        "image": "projects/enterprise-ai-knowledge-platform.png",
 
-        "description": "Upload resume and compare it with job description using NLP.",
+        "description": "AI-powered enterprise knowledge platform that uses Agentic RAG to securely search company documents and generate grounded answers with source citations.",
 
         "tags": [
-            "NLP",
-            "Scikit-Learn",
-            "Flask"
+            "Agentic RAG",
+            "LangGraph",
+            "LangChain",
+            "Qdrant",
+            "PostgreSQL",
+            "Docker",
+            "LLLM Evals"
         ],
 
-        "featured": "NLP Matching",
+        "featured": "Enterprise AI",
 
         "live": "#",
 
