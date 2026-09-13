@@ -83,9 +83,9 @@ projects = [
 
         "live": "#",
 
-        "github": "https://github.com/DharmendraYadav96",
+        "github": "https://github.com/DharmendraYadav96/Enterprise-AI-Knowledge-Platform",
 
-        "status": "Coming Soon"
+        "status": "Live"
 
     }
 
